@@ -1,0 +1,157 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.main {
+    height:100vh;
+}
+.recipe img{
+    height: fit-content;
+    width: fit-content;
+}
+.container_hero_section {
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+     justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+#hero_section_title {
+    align-self: center;
+
+}
+#hero_section_title img {
+    box-shadow: 10px 10px 2px 2px #00000026;
+    margin:auto;
+    display:block;
+    border-radius: 10%;
+}
+.recipe_img + figcaption {
+    color: #054805;
+    text-align: center;
+    font-size: 2.4rem;
+    margin-block-start: 2rem;
+    font-weight: 700;
+    font-family:'Times New Roman', Times, serif ;
+}
+
+.nutrition {
+    display:flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nutrition span {
+    border: 5px solid black;
+    padding: 1.5em;
+    border-radius: 50%;
+    text-align: center;
+    color: #054805;
+    font-weight: 600;
+}
+
+.nutrition div p {
+    margin-block-start: 3rem;
+    text-align: center;
+    font-weight: 600;
+    color: #054805;
+    font-size: larger;
+}
+
+.nutrition div p::after {
+    content:"";
+    position:relative;
+    padding:2px;
+    border-bottom: 5px solid #054805;
+    margin: auto ;
+    width: 50%;
+    display:block;
+}
+#ingredients_instructions {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+}
+.ingredients p {
+    color: #054805;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 5px #054805 solid;
+    width:min-content;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.ingredients ul {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%);
+}
+
+.ingredients ul li {
+    margin: 5px;
+    list-style-type: none;
+    font-size: 1.5em;
+    width:max-content;
+}
+
+
+.ingredients ul li::before {
+    content: "🥪";
+    margin-inline-end: 10px;
+}
+
+
+.ingredients {
+    width: 50vw;
+    position: relative;
+}
+
+.instructions {
+    width: 50vw;
+}
+
+.instructions p {
+    color: #054805;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 5px #054805 solid;
+    width:min-content;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.instructions ol {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%);
+}
+
+.instructions ol li {
+    margin: 10px;
+    /* list-style-type: none; */
+    font-size: 1.5em;
+    width:max-content;
+}
+
+.instructions {
+    width: 50vw;
+    position: relative;
+}
+
+footer {
+    height: 20vw;
+    text-align: center;
+    font-size:large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
